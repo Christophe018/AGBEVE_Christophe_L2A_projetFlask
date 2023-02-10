@@ -1,0 +1,29 @@
+{% extends "index.html" %} {% block title%}Register{% endblock%}
+ 
+{% block content %}
+
+        <h2>User Registration</h2>
+        <form action="" method="post">
+            {% if message is defined and message %}
+                <div class="alert alert-warning">{{ message }}</div>
+            {% endif %}
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control" id="name" name="nom" placeholder="Entrer le nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prenom</label>
+                <input type="text" class="form-control" id="pname" name="prenom" placeholder="Entrer le prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Entrer l'adresse email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Entrer le mot de passe" name="password" required>
+            </div><br>
+            <button type="submit" class="btn btn-primary">S'enregistrer</button>
+            <p class="bottom">Already have an account? <a href="{{url_for('auth.login')}}"> Login here</a></p>
+        </form>
+{% endblock %}

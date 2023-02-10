@@ -1,0 +1,80 @@
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #00bcd4;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #333;
+}
+
+.bottom a {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+.alert-warning {
+    padding: 10px;
+    background-color: #ffeb3b;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+body {
+    background-image: url('/static/image/chien2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 500px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+}

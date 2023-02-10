@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/css/home.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <a href="#">
+      <img src="/static/image/salamandre2.png" alt="Lizard Logo">
+      </a>
+      <div class="navbar-title">SALAMANDER</div>
+    </div>
+    <div>
+      <a href="{{url_for('auth.logout')}}">Logout</a>
+    </div>
+  </div>
+  <div class="container"><h2>Dogs Images</h2></div>
+  <div class="container">
+    <img src="/static/image/chien1.jpg" alt="Chien 1" class="chien-img">
+    <img src="/static/image/chien2.jpg" alt="Chien 2" class="chien-img">
+    <img src="/static/image/chien3.jpg" alt="Chien 3" class="chien-img">
+    <img src="/static/image/chien4.jpg" alt="Chien 4" class="chien-img">
+    <img src="/static/image/chien5.jpg" alt="Chien 5" class="chien-img">
+    <img src="/static/image/chien6.jpg" alt="Chien 6" class="chien-img">
+    <img src="/static/image/chien7.jpg" alt="Chien 7" class="chien-img">
+    <img src="/static/image/chien8.jpg" alt="Chien 8" class="chien-img">
+  </div>
+  <div>{% extends "footer.html" %}</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="/static/css/acceuil.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/acceuil.css')}}">
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+        }
+          
+        footer h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+          
+        footer p, footer ul, footer li {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        
+        footer a {
+            color: #999;
+        }
+          
+        footer a:hover {
+            color: #fff;
+        }
+          
+        footer .list-inline-item i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+          
+        footer .copyright {
+            font-size: 14px;
+            color: #999;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <a href="#">
+            <img src="/static/image/salamandre2.png" alt="Lizard Logo">
+            </a>
+            <div class="navbar-title">SALAMANDER</div>
+      </div>
+      <div>
+      <a href="{{url_for('auth.login')}}">Se connecter</a>
+      <a href="{{url_for('auth.register')}}">S'inscrire</a>
+    </div>
+    </div>
+
+    
+    <div class="content">
+      <h2>Bienvenue sur la SALAMANDER STORE</h2>
+      <p>Les chiens sont souvent considérés comme les meilleurs amis de l'homme et pour une bonne raison. 
+        Ils sont fidèles, affectueux, protecteurs et amusants. Les chiens peuvent également offrir un soutien incroyable en tant que compagnons pour les personnes souffrant de dépression, d'anxiété et de solitude. 
+        De plus, certains chiens sont formés pour aider les personnes ayant des besoins spéciaux, tels que les personnes aveugles ou sourdes.
+        En général, les chiens sont des animaux incroyables qui apportent une richesse incroyable à la vie de leurs propriétaires. 
+        C'est pourquoi il est si important de les traiter avec amour et respect, et de s'assurer qu'ils reçoivent les soins nécessaires pour vivre heureux et en bonne santé.</p>
+        <p>
+            Nous croyons que les chiens sont les compagnons les plus merveilleux que l'on puisse avoir, et nous sommes fiers de les proposer à nos clients.
+            Nos chiens sont soigneusement sélectionnés pour leur tempérament doux et leur santé robuste, et nous sommes certains que vous tomberez amoureux de l'un d'entre eux à première vue.
+            Si vous êtes à la recherche d'un nouveau compagnon à fourrure, nous invitons à visiter notre sélection de chiens disponibles. 
+            Nous sommes là pour répondre à toutes vos questions et pour vous aider à trouver le chien parfait pour votre famille. 
+            N'hésitez pas à nous contacter pour en savoir plus sur nos chiens et pour organiser une rencontre avec l'un d'entre eux.<br/>
+            Nous sommes convaincus que nos chiens apporteront joie et amour à votre vie, et nous sommes impatients de vous les présenter.
+        </p>
+    </div>
+    <div class="container">
+        <img src="/static/image/chien3.jpg" alt="Chien 3" class="chien-img">
+        <img src="/static/image/chien4.jpg" alt="Chien 4" class="chien-img">
+    </div>
+    <div>
+        <p>Pour avoir accès à la collection entière veuiller vous <a href="{{url_for('auth.login')}}">connecter</a>  si vous aviez déjà un compte au cas contraire veuillez vous <a href="{{url_for('auth.register')}}">inscrire</a> </p>
+    </div>
+    <div>{% extends "footer.html" %}</div>
+  </body>
+</html>
